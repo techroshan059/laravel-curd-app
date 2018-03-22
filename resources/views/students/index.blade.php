@@ -14,7 +14,6 @@
             <th>Email</th>
             <th>Facebook</th>
             <th>Mobile</th>
-            <th>Added date</th>
             <th width="110px;">Action</th>
         </tr>
     </thead>
@@ -26,7 +25,6 @@
             <td>{!! $student->email !!}</td>
             <td>{!! $student->fb !!}</td>
             <td>{!! $student->mobile !!}</td>
-            <td>{!! $student->created_at !!}</td>
             <td width="110px;">
                 <a class="btn btn-success btn-sm" href="{!! '/students/'.$student->id.'/edit' !!}">Edit</a>
                 {!! Form::open(['id'=>'deleteform','method'=>'DELETE','url'=>'/students/' . $student->id]) !!}
